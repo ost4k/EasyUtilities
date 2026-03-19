@@ -18,6 +18,15 @@
   <data name="ui.app.title" xml:space="preserve">
     <value>EasyUtilities</value>
   </data>
+  <data name="PackageDisplayName" xml:space="preserve">
+    <value>EasyUtilities</value>
+  </data>
+  <data name="PackagePublisherDisplayName" xml:space="preserve">
+    <value>Blukach Digital</value>
+  </data>
+  <data name="PackageDescription" xml:space="preserve">
+    <value>EasyUtilities. Requires Microsoft .NET 8.0 Desktop Runtime (x64).</value>
+  </data>
   <data name="ui.startup.title" xml:space="preserve">
     <value>Start with Windows</value>
   </data>
