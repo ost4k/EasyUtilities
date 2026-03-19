@@ -11,8 +11,8 @@
     Version="1.4.0.0" />
 
   <Properties>
-    <DisplayName>EasyUtilities</DisplayName>
-    <PublisherDisplayName>Blukach Digital</PublisherDisplayName>
+    <DisplayName>ms-resource:PackageDisplayName</DisplayName>
+    <PublisherDisplayName>ms-resource:PackagePublisherDisplayName</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
 
@@ -28,8 +28,8 @@
   <Applications>
     <Application Id="App" Executable="EasyUtilities.exe" EntryPoint="Windows.FullTrustApplication">
       <uap:VisualElements
-        DisplayName="EasyUtilities"
-        Description="EasyUtilities. Requires Microsoft .NET 8.0 Desktop Runtime (x64)."
+        DisplayName="ms-resource:PackageDisplayName"
+        Description="ms-resource:PackageDescription"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">
