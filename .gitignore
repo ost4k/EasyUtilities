@@ -5,6 +5,7 @@
 
 # MSIX packaging output
 **/AppPackages/
+**/BundleArtifacts/
 **/PackageLayout/
 **/PackageUploadLayout/
 
