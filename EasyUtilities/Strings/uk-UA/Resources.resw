@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+  <data name="ui.section.system" xml:space="preserve">
+    <value>Система</value>
+  </data>
+  <data name="ui.app.title" xml:space="preserve">
+    <value>EasyUtilities</value>
+  </data>
+  <data name="ui.startup.title" xml:space="preserve">
+    <value>Автозапуск з системою</value>
+  </data>
+  <data name="ui.startup.desc" xml:space="preserve">
+    <value>Запускати застосунок при вході в Windows.</value>
+  </data>
+  <data name="ui.middleClick.title" xml:space="preserve">
+    <value>Middle click по заголовку</value>
+  </data>
+  <data name="ui.middleClick.desc" xml:space="preserve">
+    <value>Згортати вікна при кліку середньою кнопкою по верхній панелі (для більшості програм).</value>
+  </data>
+  <data name="ui.hideNames.title" xml:space="preserve">
+    <value>Приховати назви ярликів (експериментально)</value>
+  </data>
+  <data name="ui.hideNames.desc" xml:space="preserve">
+    <value>Тимчасово ховає підписи ярликів на робочому столі та відновлює оригінальні назви при вимкненні. Рекомендується спочатку зберегти розкладку робочого столу.</value>
+  </data>
+  <data name="ui.hideArrows.title" xml:space="preserve">
+    <value>Приховати стрілки інтернет-ярликів</value>
+  </data>
+  <data name="ui.hideArrows.desc" xml:space="preserve">
+    <value>Працює лише для інтернет-ярликів (.url). Застосовується для поточного користувача.</value>
+  </data>
+  <data name="ui.hideDesktopArrows.title" xml:space="preserve">
+    <value>Приховати стрілки ярликів програм (експериментально)</value>
+  </data>
+  <data name="ui.hideDesktopArrows.desc" xml:space="preserve">
+    <value>Замінює іконку стрілки ярлика програми на прозору. Якщо стрілки залишилися видимими - ваша збірка не підтримує безпечну заміну іконок стрілок ярликів.</value>
+  </data>
+  <data name="ui.warning.title" xml:space="preserve">
+    <value>Увага</value>
+  </data>
+  <data name="ui.info.title" xml:space="preserve">
+    <value>Інформація</value>
+  </data>
+  <data name="ui.toggle.enabled" xml:space="preserve">
+    <value>Увімкнено</value>
+  </data>
+  <data name="ui.toggle.disabled" xml:space="preserve">
+    <value>Вимкнено</value>
+  </data>
+  <data name="ui.hideArrows.warning" xml:space="preserve">
+    <value>Після зміни потрібно перезапустити Explorer.</value>
+  </data>
+  <data name="ui.language.title" xml:space="preserve">
+    <value>Мова</value>
+  </data>
+  <data name="ui.language.desc" xml:space="preserve">
+    <value>Змінити мову інтерфейсу застосунку.</value>
+  </data>
+  <data name="ui.language.system" xml:space="preserve">
+    <value>Системна</value>
+  </data>
+  <data name="ui.language.uk" xml:space="preserve">
+    <value>Українська</value>
+  </data>
+  <data name="ui.language.en" xml:space="preserve">
+    <value>Англійська</value>
+  </data>
+  <data name="ui.theme.title" xml:space="preserve">
+    <value>Тема</value>
+  </data>
+  <data name="ui.theme.desc" xml:space="preserve">
+    <value>Оформлення застосунку: системна, світла або темна.</value>
+  </data>
+  <data name="ui.theme.system" xml:space="preserve">
+    <value>Системна</value>
+  </data>
+  <data name="ui.theme.light" xml:space="preserve">
+    <value>Світла</value>
+  </data>
+  <data name="ui.theme.dark" xml:space="preserve">
+    <value>Темна</value>
+  </data>
+  <data name="ui.topMost.title" xml:space="preserve">
+    <value>Always on top</value>
+  </data>
+  <data name="ui.topMost.desc" xml:space="preserve">
+    <value>Глобальна опція: Ctrl+Alt+T вмикає/вимикає always on top для активного вікна будь-якого застосунку.</value>
+  </data>
+  <data name="ui.ocr.title" xml:space="preserve">
+    <value>Розпізнавання тексту з області екрана</value>
+  </data>
+  <data name="ui.ocr.desc" xml:space="preserve">
+    <value>Гаряча клавіша: Ctrl+Alt+O. Відкривається вибір області як у Snipping Tool, потім текст копіюється в буфер.</value>
+  </data>
+  <data name="ui.restartExplorer.title" xml:space="preserve">
+    <value>Перезапустити Explorer</value>
+  </data>
+  <data name="ui.restartExplorer.desc" xml:space="preserve">
+    <value>Гаряча клавіша: Ctrl+Alt+R. Перезапускає оболонку Windows для застосування shell-змін.</value>
+  </data>
+  <data name="ui.fileList.title" xml:space="preserve">
+    <value>Список файлів з Explorer</value>
+  </data>
+  <data name="ui.fileList.desc" xml:space="preserve">
+    <value>Гаряча клавіша: Ctrl+Alt+F. Для активної папки Explorer: експортує папки та файли (включно з вкладеними) у буфер або CSV у тій самій папці.</value>
+  </data>
+  <data name="ui.fileList.mode.clipboard" xml:space="preserve">
+    <value>Буфер обміну</value>
+  </data>
+  <data name="ui.fileList.mode.csv" xml:space="preserve">
+    <value>CSV файл у папці</value>
+  </data>
+  <data name="ui.backup.title" xml:space="preserve">
+    <value>Backup налаштувань</value>
+  </data>
+  <data name="ui.backup.desc" xml:space="preserve">
+    <value>Експортувати поточні параметри у JSON-файл.</value>
+  </data>
+  <data name="ui.backup.button" xml:space="preserve">
+    <value>Зберегти backup</value>
+  </data>
+  <data name="ui.iconsSave.title" xml:space="preserve">
+    <value>Зберегти розкладку значків робочого столу</value>
+  </data>
+  <data name="ui.iconsSave.desc" xml:space="preserve">
+    <value>Експортувати поточні позиції значків робочого столу у JSON-файл.</value>
+  </data>
+  <data name="ui.iconsSave.button" xml:space="preserve">
+    <value>Зберегти розкладку</value>
+  </data>
+  <data name="ui.iconsRestore.title" xml:space="preserve">
+    <value>Відновити розкладку значків робочого столу</value>
+  </data>
+  <data name="ui.iconsRestore.desc" xml:space="preserve">
+    <value>Імпортувати позиції значків із JSON-файлу.</value>
+  </data>
+  <data name="ui.iconsRestore.button" xml:space="preserve">
+    <value>Відновити розкладку</value>
+  </data>
+  <data name="ui.restore.title" xml:space="preserve">
+    <value>Restore налаштувань</value>
+  </data>
+  <data name="ui.restore.desc" xml:space="preserve">
+    <value>Імпортувати налаштування з JSON-файлу.</value>
+  </data>
+  <data name="ui.restore.button" xml:space="preserve">
+    <value>Відновити backup</value>
+  </data>
+  <data name="app.minimized" xml:space="preserve">
+    <value>Працює у фоновому режимі (tray).</value>
+  </data>
+  <data name="middle.enabled" xml:space="preserve">
+    <value>Middle-click згортання увімкнено.</value>
+  </data>
+  <data name="middle.disabled" xml:space="preserve">
+    <value>Middle-click згортання вимкнено.</value>
+  </data>
+  <data name="middle.hook.failed" xml:space="preserve">
+    <value>Не вдалося увімкнути глобальний middle-click hook.</value>
+  </data>
+  <data name="labels.hidden" xml:space="preserve">
+    <value>Підписи ярликів приховано.</value>
+  </data>
+  <data name="labels.restored" xml:space="preserve">
+    <value>Підписи ярликів відновлено.</value>
+  </data>
+  <data name="labels.error" xml:space="preserve">
+    <value>Помилка зміни підписів</value>
+  </data>
+  <data name="admin.title" xml:space="preserve">
+    <value>Потрібні права адміністратора</value>
+  </data>
+  <data name="admin.message" xml:space="preserve">
+    <value>Для цієї операції застосунок буде перезапущено з UAC. Продовжити?</value>
+  </data>
+  <data name="continue" xml:space="preserve">
+    <value>Продовжити</value>
+  </data>
+  <data name="legacyArrows.migration.title" xml:space="preserve">
+    <value>Виявлено застаріле системне налаштування</value>
+  </data>
+  <data name="legacyArrows.migration.internet" xml:space="preserve">
+    <value>Знайдено старе machine-wide налаштування стрілок інтернет-ярликів. Для одноразового очищення застосунок буде перезапущено з правами адміністратора. Продовжити?</value>
+  </data>
+  <data name="legacyArrows.migration.desktop" xml:space="preserve">
+    <value>Знайдено старе machine-wide налаштування стрілок ярликів робочого столу. Для одноразового очищення застосунок буде перезапущено з правами адміністратора. Продовжити?</value>
+  </data>
+  <data name="legacyArrows.migration.pending" xml:space="preserve">
+    <value>Налаштування для поточного користувача оновлено, але старі machine-wide параметри стрілок ще активні.</value>
+  </data>
+  <data name="legacyArrows.migration.cancel" xml:space="preserve">
+    <value>Очищення застарілих machine-wide параметрів скасовано.</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>Добре</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="admin.cancel" xml:space="preserve">
+    <value>Запуск з правами адміністратора скасовано.</value>
+  </data>
+  <data name="arrows.updated" xml:space="preserve">
+    <value>Параметр стрілок ярликів змінено.</value>
+  </data>
+  <data name="arrows.error" xml:space="preserve">
+    <value>Помилка зміни стрілок</value>
+  </data>
+  <data name="desktopArrows.enabled.restart" xml:space="preserve">
+    <value>Готово. Щоб зміни було видно, зараз перезапустимо Провідник.</value>
+  </data>
+  <data name="desktopArrows.disabled.restart" xml:space="preserve">
+    <value>Готово. Стрілки на ярликах повернуться після перезапуску Провідника.</value>
+  </data>
+  <data name="desktopArrows.compat.warning" xml:space="preserve">
+    <value>Ця збірка Windows може ігнорувати приховування стрілок звичайних ярликів. Налаштування застосовано в безпечному режимі, без зміни системних асоціацій ярликів.</value>
+  </data>
+  <data name="explorer.title" xml:space="preserve">
+    <value>Перезапустити Explorer</value>
+  </data>
+  <data name="explorer.message" xml:space="preserve">
+    <value>Щоб застосувати зміни, потрібно перезапустити Explorer.</value>
+  </data>
+  <data name="explorer.restart" xml:space="preserve">
+    <value>Перезапустити зараз</value>
+  </data>
+  <data name="explorer.restarted" xml:space="preserve">
+    <value>Explorer перезапущено.</value>
+  </data>
+  <data name="explorer.error" xml:space="preserve">
+    <value>Не вдалося перезапустити Explorer</value>
+  </data>
+  <data name="restart.enabled" xml:space="preserve">
+    <value>Гаряча клавіша Ctrl+Alt+R увімкнена.</value>
+  </data>
+  <data name="restart.disabled" xml:space="preserve">
+    <value>Гаряча клавіша Ctrl+Alt+R вимкнена.</value>
+  </data>
+  <data name="filelist.enabled" xml:space="preserve">
+    <value>Експорт списку файлів увімкнено (Ctrl+Alt+F).</value>
+  </data>
+  <data name="filelist.disabled" xml:space="preserve">
+    <value>Експорт списку файлів вимкнено.</value>
+  </data>
+  <data name="filelist.done.clipboard" xml:space="preserve">
+    <value>Список файлів скопійовано в буфер.</value>
+  </data>
+  <data name="filelist.done.csv" xml:space="preserve">
+    <value>CSV файл створено:</value>
+  </data>
+  <data name="filelist.error" xml:space="preserve">
+    <value>Помилка експорту списку файлів</value>
+  </data>
+  <data name="ocr.enabled" xml:space="preserve">
+    <value>OCR гаряча клавіша увімкнена.</value>
+  </data>
+  <data name="ocr.disabled" xml:space="preserve">
+    <value>OCR гаряча клавіша вимкнена.</value>
+  </data>
+  <data name="ocr.hotkey.unavailable" xml:space="preserve">
+    <value>Ctrl+Alt+O недоступна, бо цю комбінацію вже використовує інша програма.</value>
+  </data>
+  <data name="lang.changed" xml:space="preserve">
+    <value>Мову інтерфейсу змінено.</value>
+  </data>
+  <data name="ocr.select" xml:space="preserve">
+    <value>Оберіть область екрана (Win+Shift+S)...</value>
+  </data>
+  <data name="ocr.empty" xml:space="preserve">
+    <value>Текст не знайдено або вибір області скасовано.</value>
+  </data>
+  <data name="ocr.done" xml:space="preserve">
+    <value>Текст розпізнано і скопійовано в буфер.</value>
+  </data>
+  <data name="ocr.error" xml:space="preserve">
+    <value>Помилка розпізнавання</value>
+  </data>
+  <data name="backup.done" xml:space="preserve">
+    <value>Backup збережено.</value>
+  </data>
+  <data name="icons.save.done" xml:space="preserve">
+    <value>Розкладку значків робочого столу збережено.</value>
+  </data>
+  <data name="icons.restore.done" xml:space="preserve">
+    <value>Розкладку значків робочого столу відновлено.</value>
+  </data>
+  <data name="icons.restore.restart" xml:space="preserve">
+    <value>Розкладку значків відновлено. Перезапустити Explorer зараз для застосування позицій?</value>
+  </data>
+  <data name="icons.error" xml:space="preserve">
+    <value>Помилка розкладки значків робочого столу</value>
+  </data>
+  <data name="restore.bad" xml:space="preserve">
+    <value>Некоректний файл backup.</value>
+  </data>
+  <data name="restore.done" xml:space="preserve">
+    <value>Налаштування відновлено.</value>
+  </data>
+  <data name="top.on" xml:space="preserve">
+    <value>Always on top увімкнено</value>
+  </data>
+  <data name="top.off" xml:space="preserve">
+    <value>Always on top вимкнено</value>
+  </data>
+  <data name="top.feature.enabled" xml:space="preserve">
+    <value>Глобальну гарячу клавішу always on top увімкнено.</value>
+  </data>
+  <data name="top.feature.disabled" xml:space="preserve">
+    <value>Глобальну гарячу клавішу always on top вимкнено.</value>
+  </data>
+  <data name="top.menu" xml:space="preserve">
+    <value>Always on top для цього вікна</value>
+  </data>
+  <data name="startup.adminRequired" xml:space="preserve">
+    <value>Потрібні права адміністратора для зміни стрілок ярликів.</value>
+  </data>
+  <data name="startup.arrowsAppliedRestart" xml:space="preserve">
+    <value>Зміни стрілок ярликів застосовано. Перезапустити Explorer зараз?</value>
+  </data>
+  <data name="tray.open" xml:space="preserve">
+    <value>Відкрити</value>
+  </data>
+  <data name="tray.exit" xml:space="preserve">
+    <value>Вийти</value>
+  </data>
+  <data name="dialog.filter.json" xml:space="preserve">
+    <value>JSON-файли (*.json)|*.json|Усі файли (*.*)|*.*</value>
+  </data>
+  <data name="backup.errorPrefix" xml:space="preserve">
+    <value>Помилка backup</value>
+  </data>
+  <data name="restore.errorPrefix" xml:space="preserve">
+    <value>Помилка відновлення</value>
+  </data>
+</root>
+

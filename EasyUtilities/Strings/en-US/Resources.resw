@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, ...</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, ...</value>
+  </resheader>
+  <data name="ui.section.system" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="ui.app.title" xml:space="preserve">
+    <value>EasyUtilities</value>
+  </data>
+  <data name="ui.startup.title" xml:space="preserve">
+    <value>Start with Windows</value>
+  </data>
+  <data name="ui.startup.desc" xml:space="preserve">
+    <value>Run this app automatically at sign-in.</value>
+  </data>
+  <data name="ui.middleClick.title" xml:space="preserve">
+    <value>Middle click on title bar</value>
+  </data>
+  <data name="ui.middleClick.desc" xml:space="preserve">
+    <value>Minimize windows on middle-click in top bar (works for most apps).</value>
+  </data>
+  <data name="ui.hideNames.title" xml:space="preserve">
+    <value>Hide shortcut names (experimental)</value>
+  </data>
+  <data name="ui.hideNames.desc" xml:space="preserve">
+    <value>Temporarily hides desktop shortcut labels and restores original names when disabled. It is recommended to save desktop icon layout first.</value>
+  </data>
+  <data name="ui.hideArrows.title" xml:space="preserve">
+    <value>Hide internet shortcut arrows</value>
+  </data>
+  <data name="ui.hideArrows.desc" xml:space="preserve">
+    <value>Works only for internet shortcuts (.url). Applies to the current user.</value>
+  </data>
+  <data name="ui.hideDesktopArrows.title" xml:space="preserve">
+    <value>Hide program shortcut arrows (experimental)</value>
+  </data>
+  <data name="ui.hideDesktopArrows.desc" xml:space="preserve">
+    <value>Replaces the program shortcut arrow icon with a transparent one. If arrows are still visible, your Windows build does not support safe shortcut-arrow icon replacement.</value>
+  </data>
+  <data name="ui.warning.title" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="ui.info.title" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="ui.toggle.enabled" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="ui.toggle.disabled" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="ui.hideArrows.warning" xml:space="preserve">
+    <value>Restart Explorer after changes.</value>
+  </data>
+  <data name="ui.language.title" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="ui.language.desc" xml:space="preserve">
+    <value>Change app UI language.</value>
+  </data>
+  <data name="ui.language.system" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="ui.language.uk" xml:space="preserve">
+    <value>Ukrainian</value>
+  </data>
+  <data name="ui.language.en" xml:space="preserve">
+    <value>English</value>
+  </data>
+  <data name="ui.theme.title" xml:space="preserve">
+    <value>Theme</value>
+  </data>
+  <data name="ui.theme.desc" xml:space="preserve">
+    <value>App look: system, light or dark.</value>
+  </data>
+  <data name="ui.theme.system" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="ui.theme.light" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="ui.theme.dark" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="ui.topMost.title" xml:space="preserve">
+    <value>Always on top</value>
+  </data>
+  <data name="ui.topMost.desc" xml:space="preserve">
+    <value>Global option: Ctrl+Alt+T toggles always-on-top for the currently active window in any app.</value>
+  </data>
+  <data name="ui.ocr.title" xml:space="preserve">
+    <value>Text recognition from screen area</value>
+  </data>
+  <data name="ui.ocr.desc" xml:space="preserve">
+    <value>Hotkey: Ctrl+Alt+O. Select area like Snipping Tool; recognized text is copied to clipboard.</value>
+  </data>
+  <data name="ui.restartExplorer.title" xml:space="preserve">
+    <value>Restart Explorer</value>
+  </data>
+  <data name="ui.restartExplorer.desc" xml:space="preserve">
+    <value>Hotkey: Ctrl+Alt+R. Restarts Windows shell to apply shell-level changes.</value>
+  </data>
+  <data name="ui.fileList.title" xml:space="preserve">
+    <value>Export file list from Explorer</value>
+  </data>
+  <data name="ui.fileList.desc" xml:space="preserve">
+    <value>Hotkey: Ctrl+Alt+F. For the active Explorer folder, export folders and files (including nested items) to clipboard or CSV in the same folder.</value>
+  </data>
+  <data name="ui.fileList.mode.clipboard" xml:space="preserve">
+    <value>Clipboard</value>
+  </data>
+  <data name="ui.fileList.mode.csv" xml:space="preserve">
+    <value>CSV file in folder</value>
+  </data>
+  <data name="ui.backup.title" xml:space="preserve">
+    <value>Settings backup</value>
+  </data>
+  <data name="ui.backup.desc" xml:space="preserve">
+    <value>Export current settings to a JSON file.</value>
+  </data>
+  <data name="ui.backup.button" xml:space="preserve">
+    <value>Save backup</value>
+  </data>
+  <data name="ui.iconsSave.title" xml:space="preserve">
+    <value>Save desktop icon layout</value>
+  </data>
+  <data name="ui.iconsSave.desc" xml:space="preserve">
+    <value>Export current desktop icon positions to a JSON file.</value>
+  </data>
+  <data name="ui.iconsSave.button" xml:space="preserve">
+    <value>Save layout</value>
+  </data>
+  <data name="ui.iconsRestore.title" xml:space="preserve">
+    <value>Restore desktop icon layout</value>
+  </data>
+  <data name="ui.iconsRestore.desc" xml:space="preserve">
+    <value>Import icon positions from a JSON file.</value>
+  </data>
+  <data name="ui.iconsRestore.button" xml:space="preserve">
+    <value>Restore layout</value>
+  </data>
+  <data name="ui.restore.title" xml:space="preserve">
+    <value>Settings restore</value>
+  </data>
+  <data name="ui.restore.desc" xml:space="preserve">
+    <value>Import settings from a JSON file.</value>
+  </data>
+  <data name="ui.restore.button" xml:space="preserve">
+    <value>Restore backup</value>
+  </data>
+  <data name="app.minimized" xml:space="preserve">
+    <value>Running in tray mode.</value>
+  </data>
+  <data name="middle.enabled" xml:space="preserve">
+    <value>Middle-click minimize enabled.</value>
+  </data>
+  <data name="middle.disabled" xml:space="preserve">
+    <value>Middle-click minimize disabled.</value>
+  </data>
+  <data name="middle.hook.failed" xml:space="preserve">
+    <value>Global middle-click hook failed.</value>
+  </data>
+  <data name="labels.hidden" xml:space="preserve">
+    <value>Shortcut labels hidden.</value>
+  </data>
+  <data name="labels.restored" xml:space="preserve">
+    <value>Shortcut labels restored.</value>
+  </data>
+  <data name="labels.error" xml:space="preserve">
+    <value>Label update error</value>
+  </data>
+  <data name="admin.title" xml:space="preserve">
+    <value>Administrator rights required</value>
+  </data>
+  <data name="admin.message" xml:space="preserve">
+    <value>The app will restart with UAC for this operation. Continue?</value>
+  </data>
+  <data name="continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="legacyArrows.migration.title" xml:space="preserve">
+    <value>Legacy system-wide setting detected</value>
+  </data>
+  <data name="legacyArrows.migration.internet" xml:space="preserve">
+    <value>An old machine-wide internet shortcut arrow setting was found. The app will restart with administrator rights once to clean it up. Continue?</value>
+  </data>
+  <data name="legacyArrows.migration.desktop" xml:space="preserve">
+    <value>An old machine-wide desktop shortcut arrow setting was found. The app will restart with administrator rights once to clean it up. Continue?</value>
+  </data>
+  <data name="legacyArrows.migration.pending" xml:space="preserve">
+    <value>Per-user setting was updated, but old machine-wide arrow settings are still active.</value>
+  </data>
+  <data name="legacyArrows.migration.cancel" xml:space="preserve">
+    <value>Legacy machine-wide cleanup was cancelled.</value>
+  </data>
+  <data name="ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="admin.cancel" xml:space="preserve">
+    <value>Administrator restart cancelled.</value>
+  </data>
+  <data name="arrows.updated" xml:space="preserve">
+    <value>Shortcut arrow setting updated.</value>
+  </data>
+  <data name="arrows.error" xml:space="preserve">
+    <value>Arrow update error</value>
+  </data>
+  <data name="desktopArrows.enabled.restart" xml:space="preserve">
+    <value>Done. To see the changes, Explorer will be restarted now.</value>
+  </data>
+  <data name="desktopArrows.disabled.restart" xml:space="preserve">
+    <value>Done. Shortcut arrows will return after Explorer restarts.</value>
+  </data>
+  <data name="desktopArrows.compat.warning" xml:space="preserve">
+    <value>This Windows build may ignore desktop shortcut arrow hiding. The setting was applied in safe mode without changing shortcut file associations.</value>
+  </data>
+  <data name="explorer.title" xml:space="preserve">
+    <value>Restart Explorer</value>
+  </data>
+  <data name="explorer.message" xml:space="preserve">
+    <value>Explorer restart is required to apply changes.</value>
+  </data>
+  <data name="explorer.restart" xml:space="preserve">
+    <value>Restart now</value>
+  </data>
+  <data name="explorer.restarted" xml:space="preserve">
+    <value>Explorer restarted.</value>
+  </data>
+  <data name="explorer.error" xml:space="preserve">
+    <value>Failed to restart Explorer</value>
+  </data>
+  <data name="restart.enabled" xml:space="preserve">
+    <value>Ctrl+Alt+R hotkey enabled.</value>
+  </data>
+  <data name="restart.disabled" xml:space="preserve">
+    <value>Ctrl+Alt+R hotkey disabled.</value>
+  </data>
+  <data name="filelist.enabled" xml:space="preserve">
+    <value>File list export enabled (Ctrl+Alt+F).</value>
+  </data>
+  <data name="filelist.disabled" xml:space="preserve">
+    <value>File list export disabled.</value>
+  </data>
+  <data name="filelist.done.clipboard" xml:space="preserve">
+    <value>File list copied to clipboard.</value>
+  </data>
+  <data name="filelist.done.csv" xml:space="preserve">
+    <value>CSV file created:</value>
+  </data>
+  <data name="filelist.error" xml:space="preserve">
+    <value>File list export error</value>
+  </data>
+  <data name="ocr.enabled" xml:space="preserve">
+    <value>OCR hotkey enabled.</value>
+  </data>
+  <data name="ocr.disabled" xml:space="preserve">
+    <value>OCR hotkey disabled.</value>
+  </data>
+  <data name="ocr.hotkey.unavailable" xml:space="preserve">
+    <value>Ctrl+Alt+O is unavailable because another app already uses this hotkey.</value>
+  </data>
+  <data name="lang.changed" xml:space="preserve">
+    <value>UI language updated.</value>
+  </data>
+  <data name="ocr.select" xml:space="preserve">
+    <value>Select screen area (Win+Shift+S)...</value>
+  </data>
+  <data name="ocr.empty" xml:space="preserve">
+    <value>No text recognized or selection was canceled.</value>
+  </data>
+  <data name="ocr.done" xml:space="preserve">
+    <value>Text recognized and copied to clipboard.</value>
+  </data>
+  <data name="ocr.error" xml:space="preserve">
+    <value>Recognition error</value>
+  </data>
+  <data name="backup.done" xml:space="preserve">
+    <value>Backup saved.</value>
+  </data>
+  <data name="icons.save.done" xml:space="preserve">
+    <value>Desktop icon layout saved.</value>
+  </data>
+  <data name="icons.restore.done" xml:space="preserve">
+    <value>Desktop icon layout restored.</value>
+  </data>
+  <data name="icons.restore.restart" xml:space="preserve">
+    <value>Desktop icon layout restored. Restart Explorer now to apply positions?</value>
+  </data>
+  <data name="icons.error" xml:space="preserve">
+    <value>Desktop icon layout error</value>
+  </data>
+  <data name="restore.bad" xml:space="preserve">
+    <value>Invalid backup file.</value>
+  </data>
+  <data name="restore.done" xml:space="preserve">
+    <value>Settings restored.</value>
+  </data>
+  <data name="top.on" xml:space="preserve">
+    <value>Always on top enabled</value>
+  </data>
+  <data name="top.off" xml:space="preserve">
+    <value>Always on top disabled</value>
+  </data>
+  <data name="top.feature.enabled" xml:space="preserve">
+    <value>Global always-on-top hotkey enabled.</value>
+  </data>
+  <data name="top.feature.disabled" xml:space="preserve">
+    <value>Global always-on-top hotkey disabled.</value>
+  </data>
+  <data name="top.menu" xml:space="preserve">
+    <value>Always on top for this window</value>
+  </data>
+  <data name="startup.adminRequired" xml:space="preserve">
+    <value>Administrator rights are required to change shortcut arrows.</value>
+  </data>
+  <data name="startup.arrowsAppliedRestart" xml:space="preserve">
+    <value>Shortcut arrow settings were applied. Restart Explorer now?</value>
+  </data>
+  <data name="tray.open" xml:space="preserve">
+    <value>Open</value>
+  </data>
+  <data name="tray.exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="dialog.filter.json" xml:space="preserve">
+    <value>JSON files (*.json)|*.json|All files (*.*)|*.*</value>
+  </data>
+  <data name="backup.errorPrefix" xml:space="preserve">
+    <value>Backup error</value>
+  </data>
+  <data name="restore.errorPrefix" xml:space="preserve">
+    <value>Restore error</value>
+  </data>
+</root>
+

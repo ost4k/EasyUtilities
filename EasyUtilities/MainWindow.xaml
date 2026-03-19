@@ -1,0 +1,286 @@
+<Window
+    x:Class="EasyUtilities.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Title="EasyUtilities">
+
+    <Grid x:Name="RootGrid" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <ScrollViewer
+            Grid.Row="0"
+            HorizontalScrollMode="Disabled"
+            HorizontalScrollBarVisibility="Disabled"
+            HorizontalContentAlignment="Stretch"
+            VerticalScrollMode="Enabled"
+            VerticalScrollBarVisibility="Visible">
+            <Grid x:Name="CardsGrid" HorizontalAlignment="Stretch" Padding="24,20,24,20" ColumnSpacing="12" RowSpacing="12" SizeChanged="CardsGrid_SizeChanged">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <TextBlock x:Name="SectionTitleText" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Система" Style="{StaticResource SubtitleTextBlockStyle}" Visibility="Collapsed" />
+                <TextBlock x:Name="AppTitleText" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="EasyUtilities" Style="{StaticResource TitleTextBlockStyle}" Margin="0,0,0,8" />
+
+                <Border x:Name="StartupCard" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="StartupTitleText" Text="Автозапуск з системою" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="StartupDescText" Text="Запускати застосунок при вході в Windows." Opacity="0.75" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="StartupToggle" Grid.Column="1" Toggled="StartupToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="MiddleClickCard" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="MiddleClickTitleText" Text="Middle click по заголовку" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="MiddleClickDescText" Text="Згортати вікна при кліку середньою кнопкою по верхній панелі (для більшості програм)." Opacity="0.75" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="MiddleClickToggle" Grid.Column="1" Toggled="MiddleClickToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="IconsSaveCard" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="IconsSaveTitleText" Text="Save desktop icon layout" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="IconsSaveDescText" Text="Export current desktop icon positions to a JSON file." Opacity="0.75" />
+                        </StackPanel>
+                        <Button x:Name="IconsSaveButton" Grid.Column="1" Content="Save layout" Click="SaveDesktopIcons_Click" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="IconsRestoreCard" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="IconsRestoreTitleText" Text="Restore desktop icon layout" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="IconsRestoreDescText" Text="Import icon positions from a JSON file." Opacity="0.75" />
+                        </StackPanel>
+                        <Button x:Name="IconsRestoreButton" Grid.Column="1" Content="Restore layout" Click="RestoreDesktopIcons_Click" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="HideNamesCard" Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="HideNamesTitleText" Text="Приховати назви ярликів" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="HideNamesDescText" Text="Без перейменування файлів. Змінює лише відображення підписів на робочому столі." Opacity="0.75" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="HideShortcutNamesToggle" Grid.Column="1" Toggled="HideShortcutNamesToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="HideArrowsCard" Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="HideArrowsTitleText" Text="Приховати стрілки інтернет-ярликів" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="HideArrowsDescText" Text="Працює лише для інтернет-ярликів (.url). Застосовується для поточного користувача." Opacity="0.75" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="HideShortcutArrowsToggle" Grid.Column="1" Toggled="HideShortcutArrowsToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="HideDesktopArrowsCard" Grid.Row="8" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="HideDesktopArrowsTitleText" Text="Hide desktop shortcut arrows" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="HideDesktopArrowsDescText" Text="Replaces shortcut arrow icon with a transparent icon. If arrows stay visible, restart Explorer." Opacity="0.75" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="HideDesktopShortcutArrowsToggle" Grid.Column="1" Toggled="HideDesktopShortcutArrowsToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="TopMostCard" Grid.Row="9" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="TopMostTitleText" Text="Always on top" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="TopMostDescText" Text="Глобальна опція: гаряча клавіша Ctrl+Alt+T вмикає/вимикає always on top для активного вікна будь-якого застосунку." Opacity="0.75" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="TopMostToggle" Grid.Column="1" Toggled="TopMostToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="OcrCard" Grid.Row="10" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="OcrTitleText" Text="Розпізнавання тексту з області екрана" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="OcrDescText" Text="Гаряча клавіша: Ctrl+Alt+O. Відкривається вибір області як у Snipping Tool, потім текст копіюється в буфер." Opacity="0.75" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="OcrToggle" Grid.Column="1" Toggled="OcrToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="RestartExplorerCard" Grid.Row="11" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="RestartExplorerTitleText" Text="Перезапустити Explorer" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="RestartExplorerDescText" Text="Гаряча клавіша: Ctrl+Alt+R. Перезапускає оболонку Windows для застосування shell-змін." Opacity="0.75" TextWrapping="Wrap" />
+                        </StackPanel>
+                        <ToggleSwitch x:Name="RestartExplorerToggle" Grid.Column="1" Toggled="RestartExplorerToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="FileListCard" Grid.Row="12" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="FileListTitleText" Text="Список файлів з Explorer" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="FileListDescText" Text="Гаряча клавіша: Ctrl+Alt+F. Для активної папки Explorer: копіює список файлів у буфер або створює CSV у тій самій папці." Opacity="0.75" TextWrapping="Wrap" />
+                            <ComboBox x:Name="FileListModeCombo" Width="210" Margin="0,8,0,0" SelectionChanged="FileListModeCombo_SelectionChanged">
+                                <ComboBoxItem x:Name="FileListModeClipboardItem" Tag="clipboard" Content="Буфер обміну" />
+                                <ComboBoxItem x:Name="FileListModeCsvItem" Tag="csv" Content="CSV файл у папці" />
+                            </ComboBox>
+                        </StackPanel>
+                        <ToggleSwitch x:Name="FileListToggle" Grid.Column="1" Toggled="FileListToggle_Toggled" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="ThemeCard" Grid.Row="13" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="ThemeTitleText" Text="Тема" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="ThemeDescText" Text="Оформлення застосунку: системна, світла або темна." Opacity="0.75" />
+                        </StackPanel>
+                        <ComboBox x:Name="ThemeCombo" Grid.Column="1" Width="160" SelectionChanged="ThemeCombo_SelectionChanged">
+                            <ComboBoxItem x:Name="ThemeSystemItem" Tag="system" Content="System" />
+                            <ComboBoxItem x:Name="ThemeLightItem" Tag="light" Content="Light" />
+                            <ComboBoxItem x:Name="ThemeDarkItem" Tag="dark" Content="Dark" />
+                        </ComboBox>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="LanguageCard" Grid.Row="14" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="LanguageTitleText" Text="Мова" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="LanguageDescText" Text="Змінити мову інтерфейсу застосунку." Opacity="0.75" />
+                        </StackPanel>
+                        <ComboBox x:Name="LanguageCombo" Grid.Column="1" Width="160" SelectionChanged="LanguageCombo_SelectionChanged">
+                            <ComboBoxItem x:Name="LanguageSystemItem" Tag="system" Content="System" />
+                            <ComboBoxItem x:Name="LanguageUkItem" Tag="uk-UA" Content="Українська" />
+                            <ComboBoxItem x:Name="LanguageEnItem" Tag="en-US" Content="English" />
+                        </ComboBox>
+                    </Grid>
+                </Border>
+
+                <Border x:Name="BackupCard" Grid.Row="15" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="BackupTitleText" Text="Backup налаштувань" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="BackupDescText" Text="Експортувати поточні параметри у JSON-файл." Opacity="0.75" />
+                        </StackPanel>
+                        <Button x:Name="BackupButton" Grid.Column="1" Content="Backup settings" Click="BackupSettings_Click" />
+                    </Grid>
+                </Border>
+
+                <Border x:Name="RestoreCard" Grid.Row="16" Grid.Column="0" Grid.ColumnSpan="2" HorizontalAlignment="Stretch" Padding="16" CornerRadius="10" BorderBrush="{ThemeResource CardStrokeColorDefaultBrush}" BorderThickness="1" Background="{ThemeResource CardBackgroundFillColorDefaultBrush}">
+                    <Grid ColumnSpacing="14">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <StackPanel>
+                            <TextBlock x:Name="RestoreTitleText" Text="Restore налаштувань" Style="{StaticResource BodyStrongTextBlockStyle}" />
+                            <TextBlock x:Name="RestoreDescText" Text="Імпортувати налаштування з JSON-файлу." Opacity="0.75" />
+                        </StackPanel>
+                        <Button x:Name="RestoreButton" Grid.Column="1" Content="Restore settings" Click="RestoreSettings_Click" />
+                    </Grid>
+                </Border>
+            </Grid>
+        </ScrollViewer>
+
+        <InfoBar
+            Grid.Row="1"
+            x:Name="StatusBar"
+            Margin="16,8,16,16"
+            IsOpen="False"
+            IsClosable="False"
+            Severity="Informational"
+            Message="" />
+    </Grid>
+</Window>
+

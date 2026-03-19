@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="EasyUtilities.TrayHost/EasyUtilities.TrayHost.csproj" />
+  <Project Path="EasyUtilities/EasyUtilities.csproj" />
+</Solution>

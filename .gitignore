@@ -1,0 +1,24 @@
+﻿# Build artifacts
+**/bin/
+**/obj/
+**/publish/
+
+# MSIX packaging output
+**/AppPackages/
+**/PackageLayout/
+**/PackageUploadLayout/
+
+# User/local environment
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.log
+
+# Local SDK bootstrap dirs
+.dotnet*/
+
+# Local assets / temp files
+my assets/
+_tmp_*.png
