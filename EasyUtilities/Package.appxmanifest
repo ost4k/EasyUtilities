@@ -9,7 +9,7 @@
   <Identity
     Name="BlukachDigital.EasyUtilities"
     Publisher="CN=662463A5-411A-4B22-8432-A85DC448DB94"
-    Version="1.4.3.0" />
+    Version="1.4.4.0" />
 
   <Properties>
     <DisplayName>EasyUtilities</DisplayName>
