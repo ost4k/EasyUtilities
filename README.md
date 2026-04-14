@@ -4,7 +4,7 @@ EasyUtilities - це десктопний застосунок для Windows (W
 
 ## Що вміє застосунок
 
-- Автозапуск з Windows (через `HKCU\Software\Microsoft\Windows\CurrentVersion\Run`) із запуском у згорнутому режимі.
+- Автозапуск з Windows: для MSIX через `StartupTask`, для unpackaged-запуску через `HKCU\Software\Microsoft\Windows\CurrentVersion\Run` (із запуском у згорнутому режимі).
 - Згортання в трей замість закриття вікна.
 - Глобальні гарячі клавіші:
   - `Ctrl+Alt+T` - увімкнути/вимкнути `Always on top` для активного вікна.

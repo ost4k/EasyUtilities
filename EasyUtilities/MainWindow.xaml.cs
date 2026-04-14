@@ -227,7 +227,7 @@ public sealed partial class MainWindow : Window
             RegisterHotkeys();
 
             _isLoading = true;
-            StartupToggle.IsOn = _settings.StartWithWindows || _startupService.IsEnabled();
+            StartupToggle.IsOn = _settings.StartWithWindows || await _startupService.IsEnabledAsync();
             MiddleClickToggle.IsOn = _settings.MinimizeOnMiddleClickTitle;
             HideShortcutArrowsToggle.IsOn = _settings.HideShortcutArrows;
             HideDesktopShortcutArrowsToggle.IsOn = _settings.HideDesktopShortcutArrows;
@@ -482,7 +482,7 @@ public sealed partial class MainWindow : Window
         try
         {
             _settings.StartWithWindows = targetState;
-            _startupService.SetEnabled(_settings.StartWithWindows);
+            await _startupService.SetEnabledAsync(_settings.StartWithWindows);
             await _settingsService.SaveAsync(_settings);
             SetStatus($"{Localize("ui.startup.title")}: {(targetState ? Localize("ui.toggle.enabled") : Localize("ui.toggle.disabled"))}");
         }
@@ -962,7 +962,7 @@ public sealed partial class MainWindow : Window
             _settings = restored;
             _settings.ShortcutRenameMaps ??= [];
             await _settingsService.SaveAsync(_settings);
-            _startupService.SetEnabled(_settings.StartWithWindows);
+            await _startupService.SetEnabledAsync(_settings.StartWithWindows);
 
             try
             {

@@ -1,5 +1,6 @@
-﻿using System.Text;
+using System.Text;
 using EasyUtilities.Services;
+using Microsoft.Windows.AppLifecycle;
 using Microsoft.UI.Xaml;
 
 namespace EasyUtilities;
@@ -74,7 +75,7 @@ public partial class App : Application
             }
         }
 
-        if (ArgumentParser.HasStartMinimized(Arguments))
+        if (ArgumentParser.HasStartMinimized(Arguments) || IsStartupTaskActivation())
         {
             _mainWindow.MinimizeToTray();
         }
@@ -114,6 +115,19 @@ public partial class App : Application
         catch
         {
             // no-op
+        }
+    }
+
+    private static bool IsStartupTaskActivation()
+    {
+        try
+        {
+            var activation = AppInstance.GetCurrent().GetActivatedEventArgs();
+            return activation.Kind == ExtendedActivationKind.StartupTask;
+        }
+        catch
+        {
+            return false;
         }
     }
 }

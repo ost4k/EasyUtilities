@@ -2,13 +2,14 @@
 <Package
   xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10"
   xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10"
+  xmlns:desktop="http://schemas.microsoft.com/appx/manifest/desktop/windows10"
   xmlns:rescap="http://schemas.microsoft.com/appx/manifest/foundation/windows10/restrictedcapabilities"
-  IgnorableNamespaces="uap rescap">
+  IgnorableNamespaces="uap desktop rescap">
 
   <Identity
     Name="BlukachDigital.EasyUtilities"
     Publisher="CN=662463A5-411A-4B22-8432-A85DC448DB94"
-    Version="1.4.2.0" />
+    Version="1.4.3.0" />
 
   <Properties>
     <DisplayName>EasyUtilities</DisplayName>
@@ -38,6 +39,11 @@
           Square310x310Logo="Assets\Square150x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
+      <Extensions>
+        <desktop:Extension Category="windows.startupTask" Executable="EasyUtilities.exe" EntryPoint="Windows.FullTrustApplication">
+          <desktop:StartupTask TaskId="EasyUtilitiesStartup" Enabled="false" DisplayName="EasyUtilities" />
+        </desktop:Extension>
+      </Extensions>
     </Application>
   </Applications>
 
